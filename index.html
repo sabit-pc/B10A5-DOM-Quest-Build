@@ -105,11 +105,12 @@
                 >
                   <img src="assets/coin.png" alt="" />
                   <p class="text-sm font-medium text-neutral-600">
-                    <span id="donated-money">0</span> BDT
+                    <span id="donated-money-1">0</span> BDT
                   </p>
                 </div>
                 <p class="text-lg font-bold">
-                  Donate for <span id="unique-text">Flood at Noakhali, Bangladesh</span>
+                  Donate for
+                  <span id="unique-text-1">Flood at Noakhali, Bangladesh</span>
                 </p>
                 <p class="text-justify text-sm font-normal text-stone-600">
                   The recent floods in Noakhali have caused significant damage
@@ -122,14 +123,14 @@
                 <div class="flex w-full flex-col gap-3">
                   <input
                     type="text"
-                    id="my-amount"
+                    id="my-amount-1"
                     placeholder="Write Donation Amount"
                     class="rounded-lg border p-4 pl-3 placeholder:text-sm"
                   />
 
                   <button
                     class="btn bg-bg-primary-0 text-lg font-medium"
-                    onclick="my_modal_5.showModal(); donationCalculator()"
+                    onclick="my_modal_5.showModal(); donationCalculator(1)"
                   >
                     Donate Now
                   </button>
@@ -137,14 +138,18 @@
                     id="my_modal_5"
                     class="modal-center modal sm:modal-middle"
                   >
-                    <div class="modal-box">
-                      <h3 class="text-lg font-bold">Hello!</h3>
-                      <p class="py-4">
-                        Press ESC key or click the button below to close
-                      </p>
+                    <div
+                      class="modal-box flex flex-col items-center justify-center gap-6 py-4"
+                    >
+                      <h3 class="text-4xl font-extrabold">Congrates!</h3>
+                      <img src="assets/coin.png" alt="" />
+                      <p class="text-center">You Have Donated for Humankind</p>
+                      <p class="text-xl font-bold">Successfully</p>
                       <div class="modal-action">
                         <form method="dialog">
-                          <button class="btn">Close</button>
+                          <button id="modal-button" class="btn">
+                            Close confirmation
+                          </button>
                         </form>
                       </div>
                     </div>
@@ -160,7 +165,7 @@
               class="flex flex-col gap-3 rounded-2xl border p-3 md:flex-row md:gap-5 md:p-6"
             >
               <div class="md:w-1/2">
-                <img src="assets/feni.png" alt="" class="w-full rounded-2xl" />
+                <img src="assets/feni.png" alt="" class="w-full" />
               </div>
 
               <div
@@ -171,11 +176,14 @@
                 >
                   <img src="assets/coin.png" alt="" />
                   <p class="text-sm font-medium text-neutral-600">
-                    <span>0</span> BDT
+                    <span id="donated-money-2">0</span> BDT
                   </p>
                 </div>
                 <p class="text-lg font-bold">
-                  Donate for Flood Relief in Feni,Bangladesh
+                  Donate for
+                  <span id="unique-text-2"
+                    >Flood Relief in Feni, Bangladesh</span
+                  >
                 </p>
                 <p class="text-justify text-sm font-normal text-stone-600">
                   The recent floods in Feni have devastated local communities,
@@ -189,13 +197,15 @@
                 </p>
                 <div class="flex w-full flex-col gap-3">
                   <input
-                    type="number"
+                    type="text"
+                    id="my-amount-2"
                     placeholder="Write Donation Amount"
                     class="rounded-lg border p-4 pl-3 placeholder:text-sm"
                   />
+
                   <button
-                    type="button"
-                    class="rounded-lg bg-bg-primary-0 px-8 py-4 text-lg font-semibold"
+                    class="btn bg-bg-primary-0 text-lg font-medium"
+                    onclick="my_modal_5.showModal(); donationCalculator(2)"
                   >
                     Donate Now
                   </button>
@@ -210,11 +220,7 @@
               class="flex flex-col gap-3 rounded-2xl border p-3 md:flex-row md:gap-5 md:p-6"
             >
               <div class="md:w-1/2">
-                <img
-                  src="assets/quota-protest.png"
-                  alt=""
-                  class="w-full rounded-2xl"
-                />
+                <img src="assets/quota-protest.png" alt="" class="w-full" />
               </div>
 
               <div
@@ -225,11 +231,12 @@
                 >
                   <img src="assets/coin.png" alt="" />
                   <p class="text-sm font-medium text-neutral-600">
-                    <span>0</span> BDT
+                    <span id="donated-money-3">0</span> BDT
                   </p>
                 </div>
                 <p class="text-lg font-bold">
-                  Aid for Injured in the Quota Movement
+                  Aid For
+                  <span id="unique-text-3">Injured in the Quota Movement</span>
                 </p>
                 <p class="text-justify text-sm font-normal text-stone-600">
                   The recent Quota movement has resulted in numerous injuries
@@ -244,13 +251,15 @@
                 </p>
                 <div class="flex w-full flex-col gap-3">
                   <input
-                    type="number"
+                    type="text"
+                    id="my-amount-3"
                     placeholder="Write Donation Amount"
                     class="rounded-lg border p-4 pl-3 placeholder:text-sm"
                   />
+
                   <button
-                    type="button"
-                    class="rounded-lg bg-bg-primary-0 px-8 py-4 text-lg font-semibold"
+                    class="btn bg-bg-primary-0 text-lg font-medium"
+                    onclick="my_modal_5.showModal(); donationCalculator(3)"
                   >
                     Donate Now
                   </button>
@@ -263,10 +272,12 @@
     </section>
 
     <!-- history format section -->
-    <section
-      class="mt-52 flex flex-col items-center justify-center gap-3 pb-5"
-      id="history-container"
-    ></section>
+    <section class="hidden" id="hide-history-from-home">
+      <div
+        id="history-container"
+        class="mt-52 flex flex-col items-center justify-center gap-3 pb-5"
+      ></div>
+    </section>
 
     <footer class="bg-stone-100 p-16"></footer>
     <script src="script.js"></script>
