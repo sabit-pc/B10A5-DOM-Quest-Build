@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Blog!</title>
+
+    <!-- adding flavicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <!-- adding output css file -->
+    <link rel="stylesheet" href="output/output.css" />
+
+    <!-- adding google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <!-- navbar section -->
+    <header class="fixed left-0 top-0 z-50 w-full bg-white">
+      <nav
+        class="flex flex-col items-center justify-center gap-5 bg-stone-100 py-6 md:flex-row md:gap-0"
+      >
+        <!-- title section 1 -->
+        <div class="flex items-center justify-center gap-3 md:hidden">
+          <img src="assets/logo.png" alt="" />
+          <p class="text-lg font-semibold">Donate Bangladesh</p>
+        </div>
+        <div class="flex w-4/5 items-center justify-between">
+          <!-- blog button -->
+          <div>
+            <a href="index.html"
+              ><button
+                type="button"
+                class="rounded-lg bg-bg-primary-0 px-8 py-3 text-lg font-semibold shadow-md transition duration-300 ease-in hover:bg-lime-400"
+              >
+                Home
+              </button></a
+            >
+          </div>
+
+          <!-- title section 2 -->
+          <div
+            class="hidden md:flex md:items-center md:justify-center md:gap-3"
+          >
+            <img src="assets/logo.png" alt="" />
+            <p class="text-lg font-semibold">Donate Bangladesh</p>
+          </div>
+
+          <!-- balance section -->
+          <div class="flex justify-center gap-2">
+            <img src="assets/coin.png" alt="" />
+            <p class="text-lg font-medium text-neutral-600">
+              <span id="current-balance">5500</span> BDT
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner section -->
+    <section>
+      <div
+        style="
+          background-image: url(assets/Syntax.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        "
+        class="mt-40 flex h-80 items-center justify-center md:mt-20"
+      >
+        <p class="text-center text-4xl font-bold text-white underline">
+          Read and Learn Javascript
+        </p>
+      </div>
+    </section>
+
+    <!-- blog card -->
+    <section class="flex justify-center">
+      <div
+        class="grid w-4/5 grid-cols-1 items-center justify-center gap-8 pt-14 md:grid-cols-2"
+      >
+        <!-- blog card 1 -->
+        <div class="relative flex flex-col gap-6 rounded-lg">
+          <p
+            class="absolute left-2 top-3 z-10 w-32 rounded-lg bg-bg-primary-0 p-3 text-center text-lg font-bold"
+          >
+            Blog #01
+          </p>
+          <img
+            src="assets/dom_tree.png"
+            alt=""
+            class="w-full rounded-2xl ring-4 ring-bg-primary-0"
+          />
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow w-full border border-base-300 bg-base-200"
+          >
+            <div class="collapse-title text-xl font-medium">
+              What is the Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface that
+                represents the structure of a document, typically HTML or XML,
+                as a tree of objects. Each element, attribute, and piece of text
+                within the document is represented as a node in this tree,
+                allowing developers to interact with and manipulate the content,
+                structure, and style of the document dynamically. <br />
+                <br />
+
+                The DOM enables programming languages, such as JavaScript, to
+                access and modify the document’s elements in real time,
+                facilitating tasks like updating the page content, handling
+                events, and responding to user actions. <br />
+                <br />
+
+                By providing a standardized way to represent and interact with
+                documents, the DOM serves as a crucial foundation for creating
+                dynamic and interactive web applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- blog card 2 -->
+        <div class="relative flex flex-col gap-6 rounded-lg">
+          <p
+            class="absolute left-2 top-3 z-10 w-32 rounded-lg bg-bg-primary-0 p-3 text-center text-lg font-bold"
+          >
+            Blog #02
+          </p>
+          <img
+            src="assets/DOM-tree.png"
+            alt=""
+            class="w-full rounded-2xl ring-4 ring-bg-primary-0"
+          />
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow w-full border border-base-300 bg-base-200"
+          >
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                To select an element from the DOM and retrieve only its text,
+                you use methods provided by the document object in JavaScript.
+                Each method allows you to access different elements based on
+                their identifiers, such as IDs, class names, or tag names.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- blog card 3 -->
+        <div class="relative flex flex-col gap-6 rounded-lg">
+          <p
+            class="absolute left-2 top-3 z-10 w-32 rounded-lg bg-bg-primary-0 p-3 text-center text-lg font-bold"
+          >
+            Blog #03
+          </p>
+          <img
+            src="assets/event-delegation-in-javascript_Thumbnail.jpg"
+            alt=""
+            class="w-full rounded-2xl ring-4 ring-bg-primary-0"
+          />
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow w-full border border-base-300 bg-base-200"
+          >
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM, and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique in the DOM (Document Object
+                Model) where a single event listener is added to a parent
+                element rather than attaching multiple event listeners to
+                individual child elements. This works because of event bubbling,
+                a process where an event triggered on a child element "bubbles
+                up" to its parent elements. By leveraging this bubbling
+                behavior, event delegation allows you to handle events on
+                dynamically added child elements without needing to reassign
+                event listeners every time a new element is added or modified.
+                <br />
+                <br />
+
+                Event delegation is especially useful for improving performance
+                when dealing with a large number of similar elements, such as a
+                list of items or buttons. Instead of attaching a separate event
+                listener to each element (which can be inefficient and
+                memory-consuming), you assign one listener to their common
+                ancestor, allowing it to manage events for all the children. It
+                also simplifies code and makes it easier to manage dynamic
+                content where elements are added or removed frequently.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- blog card 4 -->
+        <div class="relative flex flex-col gap-6 rounded-lg">
+          <p
+            class="absolute left-2 top-3 z-10 w-32 rounded-lg bg-bg-primary-0 p-3 text-center text-lg font-bold"
+          >
+            Blog #04
+          </p>
+          <img
+            src="assets/must-know-dom-manipulation-methods-v0-pbsou8zb37aa1.jpg"
+            alt=""
+            class="w-full rounded-2xl ring-4 ring-bg-primary-0"
+          />
+          <div
+            tabindex="0"
+            class="collapse collapse-arrow w-full border border-base-300 bg-base-200"
+          >
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Manipulating an element's attributes and styles in the DOM
+                involves using JavaScript to dynamically change the appearance
+                and behavior of HTML elements. To modify an element's
+                attributes, such as `src`, `href`, or `id`, you can use methods
+                like `setAttribute()` and `getAttribute()`. For example,
+                `element.setAttribute("id", "newId")` changes the ID of an
+                element, and `element.getAttribute("href")` retrieves the value
+                of an `href` attribute. Additionally, attributes like
+                `className` or `value` can be directly accessed and modified
+                through properties (e.g., `element.className = "newClass"`).
+                <br />
+                <br />
+
+                For styling, the `style` property is commonly used to change CSS
+                properties of an element. You can modify individual styles
+                directly, such as `element.style.color = "red"` to change the
+                text color, or `element.style.backgroundColor = "#000"` for
+                background color. This approach allows fine-grained control over
+                the inline styles of the element. Additionally, you can
+                dynamically add or remove entire CSS classes using
+                `classList.add()`, `classList.remove()`, or
+                `classList.toggle()`, which is often preferred for larger,
+                reusable style changes. These DOM manipulation techniques enable
+                developers to create interactive and responsive web pages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-10 bg-stone-100 p-16"></footer>
+  </body>
+</html>
