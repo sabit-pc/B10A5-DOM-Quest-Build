@@ -8607,20 +8607,8 @@ html:has(.drawer-open.drawer-open) {
   margin-top: 10rem;
 }
 
-.mt-52 {
-  margin-top: 13rem;
-}
-
 .mt-64 {
   margin-top: 16rem;
-}
-
-.mt-60 {
-  margin-top: 15rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
 }
 
 .mt-72 {
@@ -10758,11 +10746,6 @@ html:has(.drawer-open.drawer-open) {
   text-align: center;
 }
 
-.focus\:bg-bg-primary-0:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(180 244 97 / var(--tw-bg-opacity));
-}
-
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -10784,10 +10767,6 @@ html:has(.drawer-open.drawer-open) {
 
   .md\:mt-44 {
     margin-top: 11rem;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
   }
 
   .md\:mt-52 {
