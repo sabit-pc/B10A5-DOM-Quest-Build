@@ -60,7 +60,7 @@ function donationCalculator (itemIndex) {
         <p class="text-stone-600 text-sm">Date: ${time.format(myTime)}</p>
         </div>`
 
-        my_modal_5.showModal();
+        document.getElementById("my_modal_5").showModal();
 
     }
 }
